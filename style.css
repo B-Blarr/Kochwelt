@@ -227,6 +227,39 @@ h3 {
   font-weight: 500;
 }
 
+footer {
+  background-color: #403b3b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 64px;
+}
+
+.footer-logo img {
+  max-width: 240px;
+  width: 100%;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 1;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
 @media (max-width: 550px) {
   main {
     padding: 0 40px;
