@@ -74,6 +74,7 @@
   margin: 0;
   font-family: "Raleway", sans-serif;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -87,6 +88,7 @@ body {
 main {
   padding: 0 64px;
 }
+
 #hero-img {
   min-height: 63px;
   min-width: 220px;
@@ -227,6 +229,48 @@ h3 {
 .creator span {
   font-size: 16px;
   font-weight: 500;
+}
+
+.kontak-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.kontakt-form input {
+  border-radius: 8px;
+}
+
+.kontakt-form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 10px;
+}
+
+.kontakt-form-wrap input,
+textarea {
+  display: flex;
+  border-radius: 8px;
+  align-items: start;
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: none;
 }
 
 footer {
