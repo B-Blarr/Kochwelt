@@ -130,7 +130,8 @@ h1 {
 .horizontal-line {
   width: 100%;
   height: 1px;
-  border: 1px solid #efefef;
+  border: 0;
+  background-color: #efefef;
   margin-top: 48px;
 }
 
