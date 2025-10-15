@@ -89,7 +89,7 @@ main {
 }
 #hero-img {
   min-height: 63px;
-  min-width: 270px;
+  min-width: 220px;
 }
 
 main img {
@@ -161,6 +161,7 @@ form input {
   text-align: center;
   padding: 8px 12px;
   outline: none;
+  font-weight: 500;
 }
 
 .button {
@@ -221,6 +222,11 @@ h3 {
   border-radius: 50%;
 }
 
+.creator span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
 @media (max-width: 550px) {
   main {
     padding: 0 40px;
@@ -233,6 +239,14 @@ h3 {
   h1 {
     font-size: 32px;
     margin-bottom: 16px;
+  }
+
+  .horizontal-line {
+    margin-top: 24px;
+  }
+
+  .ingredients-input {
+    padding: 8px 0;
   }
 
   form input {
@@ -251,7 +265,7 @@ h3 {
   }
 
   .recipe-info-item {
-    padding: 4px 6px;
+    padding: 4px 0px;
     width: 100%;
     justify-content: flex-start;
   }
@@ -280,5 +294,22 @@ h3 {
 
   .creator {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 405px) {
+  main {
+    padding: 0 24px;
+  }
+
+  form input {
+    width: 40px;
+    padding: 4px 6px;
+  }
+
+  .button {
+    padding: 8px 32px;
+    width: 120px;
+    text-align: left;
   }
 }
