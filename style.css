@@ -87,6 +87,10 @@ body {
 main {
   padding: 0 64px;
 }
+#hero-img {
+  min-height: 63px;
+  min-width: 270px;
+}
 
 main img {
   display: block;
@@ -103,7 +107,6 @@ h1 {
 
 .recipe-info {
   display: flex;
-  flex-wrap: wrap;
   gap: 16px;
   padding-top: 24px;
 }
@@ -145,10 +148,7 @@ form label {
 
 .input-group {
   display: inline-flex;
-  justify-content: center;
-
   border-radius: 8px 0 0 8px;
-  overflow: hidden;
 }
 
 form input {
@@ -217,4 +217,49 @@ h3 {
 .creator img {
   width: 96px;
   border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+  main {
+    padding: 0 40px;
+  }
+  .recipe-form label {
+    font-size: 16px;
+  }
+
+  form input {
+    width: 90px;
+    padding: 4px 6px;
+  }
+
+  .recipe-info {
+    flex-direction: column;
+    max-width: 440px;
+  }
+
+  .recipe-info-item {
+    padding: 4px 6px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .recipe-info-item-text {
+    font-size: 14px;
+  }
+
+  .recipe-info-item img {
+    max-height: 12px;
+    max-width: 12px;
+    display: flex;
+  }
+
+  table td {
+    font-size: 14px;
+  }
+  table tr {
+    padding: 8px 0;
+  }
+
+  .recipe-instructions p {
+    font-size: 15px;
+  }
 }
