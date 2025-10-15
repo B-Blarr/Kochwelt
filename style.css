@@ -103,6 +103,7 @@ main img {
 h1 {
   margin-top: 40px;
   margin-bottom: 24px;
+  font-size: 40px;
 }
 
 .recipe-info {
@@ -144,6 +145,7 @@ h1 {
 
 form label {
   padding-right: 8px;
+  font-size: 16px;
 }
 
 .input-group {
@@ -223,8 +225,14 @@ h3 {
   main {
     padding: 0 40px;
   }
+
   .recipe-form label {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 
   form input {
@@ -232,9 +240,14 @@ h3 {
     padding: 4px 6px;
   }
 
+  .input-group {
+    padding-top: 6px;
+  }
+
   .recipe-info {
     flex-direction: column;
     max-width: 440px;
+    gap: 8px;
   }
 
   .recipe-info-item {
@@ -242,6 +255,7 @@ h3 {
     width: 100%;
     justify-content: flex-start;
   }
+
   .recipe-info-item-text {
     font-size: 14px;
   }
@@ -255,11 +269,16 @@ h3 {
   table td {
     font-size: 14px;
   }
+
   table tr {
     padding: 8px 0;
   }
 
   .recipe-instructions p {
     font-size: 15px;
+  }
+
+  .creator {
+    padding-bottom: 40px;
   }
 }
