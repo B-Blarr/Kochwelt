@@ -143,20 +143,33 @@ form label {
   padding-right: 8px;
 }
 
+.input-group {
+  display: inline-flex;
+  justify-content: center;
+
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+}
+
 form input {
-  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  border-right: 0;
+  border-radius: 8px 0 0 8px;
   border-width: 1px;
   text-align: center;
-  padding: 8px 0;
+  padding: 8px 12px;
+  outline: none;
 }
 
 .button {
   background-color: #008000;
   color: white;
-  padding: 8px 24px;
-  border-width: 1px;
+  padding: 8px 32px;
   max-width: 145px;
+  cursor: pointer;
+  border: 0;
 }
+
 table {
   display: flex;
   padding-bottom: 32px;
