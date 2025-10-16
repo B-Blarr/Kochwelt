@@ -195,6 +195,7 @@ h1 {
 
 .recipe-info-item img {
   max-height: 16px;
+  border-radius: 0;
 }
 
 .recipe-info-item-text {
