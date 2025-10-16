@@ -76,16 +76,19 @@
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
   max-width: 1440px;
   width: 100%;
+  padding: 0 64px;
+  box-sizing: border-box;
 }
 
 main {
-  padding: 0 64px;
 }
 #hero-img {
   min-height: 63px;
@@ -227,12 +230,21 @@ h3 {
   font-weight: 500;
 }
 
-footer {
+.footer-section {
   background-color: #403b3b;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 64px;
+  padding: 48px 64px;
+  max-width: 1440px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-logo img {
@@ -257,12 +269,33 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.footer-links a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 780px) {
+  .footer-links-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-end;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 550px) {
   main {
     padding: 0 40px;
+  }
+
+  .wrapper {
+    padding: 0 0px;
   }
 
   .recipe-form label {
@@ -328,6 +361,9 @@ footer {
   .creator {
     padding-bottom: 40px;
   }
+  footer {
+    padding: 32px 40px;
+  }
 }
 
 @media (max-width: 405px) {
@@ -344,5 +380,8 @@ footer {
     padding: 8px 32px;
     width: 120px;
     text-align: left;
+  }
+  .footer-links a {
+    font-size: 14px;
   }
 }
