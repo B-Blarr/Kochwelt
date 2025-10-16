@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="kontakt-wrapper">
+      <div class="kontakt-wrapper">
         <form action="" method="get" class="kontakt-form">
-            <div class="kontakt-form-wrap">
-                <label for="name">Dein Name: </label>
-                <input type="text" name="name" id="name" required />
-            </div>
-            <div class="kontakt-form-wrap">
-                <label for="email">Deine E-Mail: </label>
-                <input type="email" name="email" id="email" required />
-            </div>
-            <div class="kontakt-form-wrap">
-                <label for="email">Deine E-Mail: </label>
-                <textarea type="message" name="email" id="email" required></textarea>
-            </div>
-            <input type="submit" class="button" value="Abschicken" />
+          <div class="kontakt-form-wrap">
+            <label for="name">Dein Name: </label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="kontakt-form-wrap">
+            <label for="email">Deine E-Mail: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="kontakt-form-wrap">
+            <label for="email">Deine E-Mail: </label>
+            <textarea
+              type="message"
+              name="email"
+              id="email"
+              required
+            ></textarea>
+          </div>
+          <input type="submit" class="button" value="Abschicken" />
         </form>
-        </div>
+      </div>
     </main>
-</body>
-
+    <div class="footer-section">
+      <footer>
+        <div class="footer-logo">
+          <img src="./img/logo.png" alt="Kochwelt_Logo" />
+        </div>
+        <div class="footer-links-container">
+          <div class="footer-links"><a href="#">Kontakt</a></div>
+          <div class="footer-links"><a href="#">Impressum</a></div>
+          <div class="footer-links"><a href="#">Datenschutz</a></div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -276,7 +276,7 @@ textarea {
   border: none;
 }
 
-footer {
+.footer-section {
   background-color: #403b3b;
   width: 100%;
   display: flex;
