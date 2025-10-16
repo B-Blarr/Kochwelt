@@ -14,3 +14,7 @@ function sendMail(event){﻿
         console.log(error);
     });
 }
+
+function toogleMenu(){
+    document.getElementById('menu').classList.toggle('d_none');
+}
