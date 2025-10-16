@@ -258,7 +258,7 @@ form input {
 }
 
 .button-single:hover {
-  background-color: rgb(37, 192, 37);
+  background-color: rgb(3, 179, 3);
 }
 
 table {
@@ -522,7 +522,6 @@ footer {
   display: flex;
   justify-content: center;
   font-size: 40px;
-  
 }
 
 .links_zu_rezepten {
@@ -530,7 +529,6 @@ footer {
   justify-content: space-evenly;
   object-fit: cover;
   gap: 32px;
-  
 }
 
 .links_zu_rezepten img {
@@ -564,7 +562,6 @@ footer {
 
 .infotext span {
   padding: 32px;
-  
 }
 
 .infotext img {
