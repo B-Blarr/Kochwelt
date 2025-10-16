@@ -101,6 +101,7 @@ body {
   display: flex;
   gap: 16px;
   padding-bottom: 8px;
+  
 }
 
 .navigationsleiste a {
@@ -141,6 +142,7 @@ body {
   justify-content: center;
   padding-right: 120px;
   padding-left: 120px;
+  margin-bottom: 36px;
 }
 
 .bild_erstes_rezept {
@@ -538,9 +540,9 @@ footer {
 }
 
 .links_zu_rezepten img {
-  width: 400px;
-  height: 400px;
-  aspect-ratio: 1/2;
+  width: 80%;
+  height: 100%;
+  aspect-ratio: 1/1;
   border-radius: 5%;
 }
 
@@ -564,6 +566,8 @@ footer {
 .infotext {
   display: flex;
   justify-content: center;
+  margin-right: 100px;
+  margin-left: 60px;
 }
 
 .infotext span {
