@@ -2,30 +2,6 @@
   font-display: swap;
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 100;
-  src: url("./fonts/raleway-v37-latin-100.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 200;
-  src: url("./fonts/raleway-v37-latin-200.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
-  src: url("./fonts/raleway-v37-latin-300.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 400;
   src: url("./fonts/raleway-v37-latin-regular.woff2") format("woff2");
 }
@@ -54,22 +30,6 @@
   src: url("./fonts/raleway-v37-latin-700.woff2") format("woff2");
 }
 
-@font-face {
-  font-display: swap;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  src: url("./fonts/raleway-v37-latin-800.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 900;
-  src: url("./fonts/raleway-v37-latin-900.woff2") format("woff2");
-}
-
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -92,7 +52,6 @@ body {
 .header {
   display: flex;
   justify-content: space-around;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   margin-bottom: 30px;
   min-height: 65px;
   align-items: flex-end;
