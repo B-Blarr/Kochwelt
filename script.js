@@ -18,3 +18,9 @@ function sendMail(event){﻿
 function toogleMenu(){
     document.getElementById('menu').classList.toggle('d_none');
 }
+
+fetch("footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+  });

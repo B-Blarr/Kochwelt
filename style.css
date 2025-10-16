@@ -298,7 +298,7 @@ h3 {
 }
 
 .kontakt-wrapper {
-  min-height: 90vh;
+  height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -345,6 +345,7 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: center;
+  bottom: 0
 }
 
 footer {
