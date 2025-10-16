@@ -526,10 +526,11 @@ footer {
   }
 }
 
-.zweites-rezept h2 {
+.zweites_rezept h2 {
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 32px;
+  margin-bottom: 32px;
 }
 
 .links_zu_rezepten {
