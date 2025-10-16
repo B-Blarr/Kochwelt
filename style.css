@@ -257,6 +257,10 @@ form input {
   border: 0;
 }
 
+.button-single:hover {
+  background-color: rgb(37, 192, 37);
+}
+
 table {
   display: flex;
   padding-bottom: 32px;
@@ -504,7 +508,7 @@ footer {
     padding: 4px 6px;
   }
 
-  .button {
+  .button-single {
     padding: 8px 32px;
     width: 120px;
     text-align: left;
