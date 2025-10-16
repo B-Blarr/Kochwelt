@@ -88,6 +88,7 @@ body {
   padding: 0 64px;
   box-sizing: border-box;
 }
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -247,6 +248,7 @@ form input {
   outline: none;
   font-weight: 500;
 }
+
 .button {
   display: flex;
   align-items: center;
@@ -336,7 +338,7 @@ h3 {
 }
 
 .kontakt-wrapper {
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,6 +377,7 @@ textarea {
   padding: 8px 12px;
   box-sizing: border-box;
   border: none;
+  resize: vertical;
 }
 
 .footer-section {
@@ -530,6 +533,7 @@ footer {
     width: 120px;
     text-align: left;
   }
+
   .footer-links a {
     font-size: 14px;
   }

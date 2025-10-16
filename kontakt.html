@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
+    <script src="script.js"></script>
+</head>
 
-  <body>
+<body>
     <main>
-      <div class="kontakt-wrapper">
-        <form action="" method="get" class="kontakt-form">
-          <div class="kontakt-form-wrap">
-            <label for="name">Dein Name: </label>
-            <input type="text" name="name" id="name" required />
-          </div>
-          <div class="kontakt-form-wrap">
-            <label for="email">Deine E-Mail: </label>
-            <input type="email" name="email" id="email" required />
-          </div>
-          <div class="kontakt-form-wrap">
-            <label for="email">Deine Nachricht: </label>
-            <textarea
-              type="message"
-              name="email"
-              id="email"
-              required
-            ></textarea>
-          </div>
-          <input type="submit" class="button" value="Abschicken" />
-        </form>
-      </div>
+        <div class="kontakt-wrapper">
+            <form onsubmit="sendMail(event)" class="kontakt-form">
+                <div class="kontakt-form-wrap">
+                    <h3>Kontaktiere uns</h3>
+                    <label for="name">Dein Name: </label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="kontakt-form-wrap">
+                    <label for="email">Deine E-Mail: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="kontakt-form-wrap">
+                    <label for="message">Deine Nachricht: </label>
+                    <textarea type="message" name="email" id="email" required></textarea>
+                </div>
+                <button type="submit" class="button-single">Abschicken</button>
+            </form>
+        </div>
     </main>
     <div class="footer-section">
-      <footer>
-        <div class="footer-logo">
-          <img src="./img/logo.png" alt="Kochwelt_Logo" />
-        </div>
-        <div class="footer-links-container">
-          <div class="footer-links"><a href="./kontakt.html">Kontakt</a></div>
-          <div class="footer-links">
-            <a href="#" target="_blank">Impressum</a>
-          </div>
-          <div class="footer-links">
-            <a href="#" target="_blank">Datenschutz</a>
-          </div>
-        </div>
-      </footer>
+        <footer>
+            <div class="footer-logo">
+                <img src="./img/logo.png" alt="Kochwelt_Logo" />
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-links"><a href="./kontakt.html">Kontakt</a></div>
+                <div class="footer-links">
+                    <a href="#" target="_blank">Impressum</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#" target="_blank">Datenschutz</a>
+                </div>
+            </div>
+        </footer>
     </div>
-  </body>
+</body>
+
 </html>
