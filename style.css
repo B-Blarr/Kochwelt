@@ -254,6 +254,11 @@ form input {
   text-decoration: none;
   text-align: center;
   border: black solid 1px;
+  
+}
+
+.button:hover {
+  background-color: rgb(3, 179, 3);
 }
 
 .button-single {
