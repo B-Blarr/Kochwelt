@@ -103,6 +103,12 @@ body {
   padding-bottom: 8px;
 }
 
+.navigationsleiste a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
 .burger_menu {
   width: 80px;
   height: 80px;
