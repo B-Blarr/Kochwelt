@@ -496,6 +496,9 @@ footer {
   text-decoration: none;
 }
 
+ul {padding-inline-start: 0px;
+  }
+
 @media (max-width: 780px) {
   .footer-links-container {
     width: 100%;
