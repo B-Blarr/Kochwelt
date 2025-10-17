@@ -161,7 +161,7 @@ body {
 
 #hero-img {
   min-height: 63px;
-  min-width: 220px;
+  min-width: 208px;
 }
 
 main img {
@@ -298,7 +298,6 @@ h3 {
 
 .creator {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 32px;
   padding-bottom: 64px;
@@ -309,7 +308,7 @@ h3 {
   height: 96px;
   object-fit: cover;
   border-radius: 50%;
-  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .creator span {
