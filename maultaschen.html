@@ -1,177 +1,148 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nudelauflauf</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div class="header">
-      <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
-      <nav class="navigationsleiste">
-        <a href="index.html">Start</a>
-        <a href="recipe.html">Rezept des Tages</a>
-        <a href="kontakt.html">Kontakt</a>
-        <a href="impressum.html">Impressum</a>
-      </nav>
-      <button class="burger_menu" onclick="toggleMenu()">
-        <div class="burger_line"></div>
-        <div class="burger_line"></div>
-        <div class="burger_line"></div>
-      </button>
-      <nav id="menu" class="d_none">
-        <ul>
-          <li><a href="">Start</a></li>
-          <li><a href="">Rezept</a></li>
-          <li><a href="">Kontakt</a></li>
-          <li><a href="">Impressum</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div class="header-line"></div>
-    <div class="wrapper">
-      <header></header>
-      <main>
-        <h1>Maultaschen</h1>
-        <img id="hero-img" src="./img/maultaschen.png" alt="Maultaschen" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nudelauflauf</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div id="header" style="width: 100%;"></div>
+  <script src="script.js"></script>
+  <div class="wrapper">
+    <header></header>
+    <main>
+      <h1>Maultaschen</h1>
+      <img id="hero-img" src="./img/maultaschen.png" alt="Maultaschen" />
+      <div class="recipe-info">
+        <div class="recipe-info-item">
+          <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">120 Min.</span>
+        </div>
+        <div class="recipe-info-item">
+          <img src="./img/brain-solid.svg" alt="brain_icon" /><span class="recipe-info-item-text">Normal</span>
+        </div>
+        <div class="recipe-info-item">
+          <img src="./img/calendar-alt-regular.svg" alt="calendar_icon" />
+          <span class="recipe-info-item-text">14.10.2025</span>
+        </div>
+      </div>
+
+      <div class="horizontal-line"></div>
+
+      <div class="ingredients-input">
+        <form class="recipe-form">
+          <label for="amount">Zutaten für</label>
+
+          <div class="input-group">
+            <input id="amount" min="1" value="4" type="number" />
+            <button class="button-single">Portionen</button>
+          </div>
+        </form>
+      </div>
+      <table>
+        <tr>
+          <td>400</td>
+          <td>g Mehl</td>
+        </tr>
+        <tr>
+          <td>0.8</td>
+          <td>TL Salz</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Eier</td>
+        </tr>
+        <tr>
+          <td>0.4</td>
+          <td>Packungen Rahmspinat (TK)</td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>g Hackfleisch, gemischt</td>
+        </tr>
+        <tr>
+          <td>200</td>
+          <td>g Mett (besser Brät)</td>
+        </tr>
+        <tr>
+          <td>0.4</td>
+          <td>Zwiebeln</td>
+        </tr>
+        <tr>
+          <td>80</td>
+          <td>g Schinken (Schwarzwälder)</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Salz und Pfeffer</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Muskat</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Majoran</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Petersilie</td>
+        </tr>
+      </table>
+      <section class="preparation">
+        <h2>Zubereitung</h2>
         <div class="recipe-info">
           <div class="recipe-info-item">
-            <img src="./img/clock-regular.svg" alt="clock_item" /><span
-              class="recipe-info-item-text"
-              >120 Min.</span
-            >
+            <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">Ca. 60
+              Minuten</span>
           </div>
           <div class="recipe-info-item">
-            <img src="./img/brain-solid.svg" alt="brain_icon" /><span
-              class="recipe-info-item-text"
-              >Normal</span
-            >
-          </div>
-          <div class="recipe-info-item">
-            <img src="./img/calendar-alt-regular.svg" alt="calendar_icon" />
-            <span class="recipe-info-item-text">14.10.2025</span>
+            <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">Gesamtzeit ca. 120
+              Minuten</span>
           </div>
         </div>
-
-        <div class="horizontal-line"></div>
-
-        <div class="ingredients-input">
-          <form class="recipe-form">
-            <label for="amount">Zutaten für</label>
-
-            <div class="input-group">
-              <input id="amount" min="1" value="4" type="number" />
-              <button class="button-single">Portionen</button>
-            </div>
-          </form>
+        <div class="recipe-instructions">
+          <p>
+            1. Aus den ersten 4 Zutaten einen Nudelteig zubereiten.
+            <br /><br />
+            2. Die Zwiebel und den Schinken klein schneiden. Den aufgetauten
+            Spinat abgießen und alles gut durchmischen, mit den Gewürzen
+            abschmecken. <br /><br />
+            3. Den Teig in 3-4 Stücke teilen und dünn ausrollen - am besten
+            rechteckig. Die Fleischfüllung mit 2 Teelöffeln Häufchenweise in
+            Abständen auf die Hälfte vom Teig setzen, die andere Teighälfte
+            darüber klappen und zwischen den Häufchen gut andrücken. Mit einem
+            Teigrädchen in der Mitte vom angedrückten Teig die Maultaschen
+            "schneiden", nochmals die Ränder gut andrücken. <br /><br />
+            4. Die Maultaschen in kochendes Salzwasser geben und ca. 10
+            Minuten gar ziehen lassen. Dann mit kaltem Wasser gut abspülen,
+            sonst kleben sie gerne aneinander. Serviert werden die Maultaschen
+            entweder in einer klaren Brühe mit Schnittlauchröllchen oder man
+            kann die Maultaschen in einer Pfanne mit Zwiebeln und Ei anrösten.
+            <br /><br />
+            5. Die Menge ergibt je nach Größe 70 - 80 Stück und lassen sich
+            auch sehr gut einfrieren. Statt Brät - gibt es nicht überall in
+            Deutschland - kann man auch Mett nehmen.<br /><br />
+            6. Traditionell gibt es die Maultaschen am Gründonnerstag.
+          </p>
         </div>
-        <table>
-          <tr>
-            <td>400</td>
-            <td>g Mehl</td>
-          </tr>
-          <tr>
-            <td>0.8</td>
-            <td>TL Salz</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Eier</td>
-          </tr>
-          <tr>
-            <td>0.4</td>
-            <td>Packungen Rahmspinat (TK)</td>
-          </tr>
-          <tr>
-            <td>200</td>
-            <td>g Hackfleisch, gemischt</td>
-          </tr>
-          <tr>
-            <td>200</td>
-            <td>g Mett (besser Brät)</td>
-          </tr>
-          <tr>
-            <td>0.4</td>
-            <td>Zwiebeln</td>
-          </tr>
-          <tr>
-            <td>80</td>
-            <td>g Schinken (Schwarzwälder)</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Salz und Pfeffer</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Muskat</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Majoran</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Petersilie</td>
-          </tr>
-        </table>
-        <section class="preparation">
-          <h2>Zubereitung</h2>
-          <div class="recipe-info">
-            <div class="recipe-info-item">
-              <img src="./img/clock-regular.svg" alt="clock_item" /><span
-                class="recipe-info-item-text"
-                >Ca. 60 Minuten</span
-              >
-            </div>
-            <div class="recipe-info-item">
-              <img src="./img/clock-regular.svg" alt="clock_item" /><span
-                class="recipe-info-item-text"
-                >Gesamtzeit ca. 120 Minuten</span
-              >
-            </div>
-          </div>
-          <div class="recipe-instructions">
-            <p>
-              1. Aus den ersten 4 Zutaten einen Nudelteig zubereiten.
-              <br /><br />
-              2. Die Zwiebel und den Schinken klein schneiden. Den aufgetauten
-              Spinat abgießen und alles gut durchmischen, mit den Gewürzen
-              abschmecken. <br /><br />
-              3. Den Teig in 3-4 Stücke teilen und dünn ausrollen - am besten
-              rechteckig. Die Fleischfüllung mit 2 Teelöffeln Häufchenweise in
-              Abständen auf die Hälfte vom Teig setzen, die andere Teighälfte
-              darüber klappen und zwischen den Häufchen gut andrücken. Mit einem
-              Teigrädchen in der Mitte vom angedrückten Teig die Maultaschen
-              "schneiden", nochmals die Ränder gut andrücken. <br /><br />
-              4. Die Maultaschen in kochendes Salzwasser geben und ca. 10
-              Minuten gar ziehen lassen. Dann mit kaltem Wasser gut abspülen,
-              sonst kleben sie gerne aneinander. Serviert werden die Maultaschen
-              entweder in einer klaren Brühe mit Schnittlauchröllchen oder man
-              kann die Maultaschen in einer Pfanne mit Zwiebeln und Ei anrösten.
-              <br /><br />
-              5. Die Menge ergibt je nach Größe 70 - 80 Stück und lassen sich
-              auch sehr gut einfrieren. Statt Brät - gibt es nicht überall in
-              Deutschland - kann man auch Mett nehmen.<br /><br />
-              6. Traditionell gibt es die Maultaschen am Gründonnerstag.
-            </p>
-          </div>
-        </section>
-        <section class="creator-section">
-          <h3>Rezept erstellt von</h3>
-          <div class="creator">
-            <img src="./img/Foto_Konstantin.jpg" alt="img_Konstantin" />
-            <span>Konstantin Fenzlein</span>
-          </div>
-        </section>
-      </main>
-    </div>
-    <div class="footer-section">
-        <div id="footer" style="width: 100%;"></div>
-        <script src="script.js"></script>
-    </div>
-  </body>
+      </section>
+      <section class="creator-section">
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+          <img src="./img/Foto_Konstantin.jpg" alt="img_Konstantin" />
+          <span>Konstantin Fenzlein</span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="footer-section">
+    <div id="footer" style="width: 100%;"></div>
+    <script src="script.js"></script>
+  </div>
+</body>
+
 </html>
