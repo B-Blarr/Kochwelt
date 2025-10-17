@@ -91,6 +91,7 @@ body {
   gap: 8px;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .burger_line {
@@ -516,11 +517,22 @@ ul {
   }
 }
 
+@media (max-width: 950px) {
+  .burger_menu {
+    display: flex;
+  }
+
+  .navigationsleiste {
+    display: none;
+  }
+}
+
 @media (max-width: 890px) {
   .text_rezept p {
     padding-bottom: 16px;
     font-size: 14px;
   }
+
   #index-h1 {
     margin-top: 0px;
     margin-bottom: 16px;
