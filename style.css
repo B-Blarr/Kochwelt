@@ -222,30 +222,17 @@ form input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 320px;
-  height: 48px;
-  background-color: #008000;
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  border: black solid 1px;
-}
-
-.button:hover {
-  background-color: rgb(3, 179, 3);
-}
-
-.button-single {
   background-color: #008000;
   color: white;
   padding: 8px 32px;
   max-width: 145px;
   cursor: pointer;
   border: 0;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.button-single:hover {
+.button:hover {
   background-color: rgb(3, 179, 3);
 }
 
