@@ -71,6 +71,11 @@ body {
   padding-inline: 64px;
 }
 
+.header img {
+  width: 100%;
+  max-width: 320px;
+}
+
 .navigationsleiste {
   display: flex;
   gap: 16px;
