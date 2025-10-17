@@ -10,7 +10,7 @@ function sendMail(event) {
     },
   })
     .then(() => {
-      window.location.href = "./send_mail.html";
+      window.location.href = "#popup";
     })
     .catch((error) => {
       console.log(error);
