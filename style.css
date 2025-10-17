@@ -756,13 +756,14 @@ ul {
   form input {
     width: 24px;
     padding: 4px 4px;
+    font-size: 12px;
   }
 
   .button {
     padding: 8px 32px;
     width: 66px;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   form label {
