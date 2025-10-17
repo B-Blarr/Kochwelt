@@ -1,5 +1,65 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nudelauflauf</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./img/logo_small_White.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
+      <nav class="navigationsleiste">
+        <a href="index.html">Start</a>
+        <a href="recipe.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+      <button class="burger_menu" onclick="toggleMenu()">
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+      </button>
+      <nav id="menu" class="d_none">
+        <ul>
+          <li><a href="">Start</a></li>
+          <li><a href="">Rezept</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-line"></div>
+    <div class="wrapper">
+      <header></header>
+      <main>
+        <h1>Maultaschen</h1>
+        <img id="hero-img" src="./img/maultaschen.png" alt="Maultaschen" />
+        <div class="recipe-info">
+          <div class="recipe-info-item">
+            <img src="./img/clock-regular.svg" alt="clock_item" /><span
+              class="recipe-info-item-text"
+              >120 Min.</span
+            >
+          </div>
+          <div class="recipe-info-item">
+            <img src="./img/brain-solid.svg" alt="brain_icon" /><span
+              class="recipe-info-item-text"
+              >Normal</span
+            >
+          </div>
+          <div class="recipe-info-item">
+            <img src="./img/calendar-alt-regular.svg" alt="calendar_icon" />
+            <span class="recipe-info-item-text">14.10.2025</span>
+          </div>
+        </div>
 
 <head>
   <meta charset="UTF-8" />
