@@ -1,200 +1,218 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lasagne</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./img/logo_small_White.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lasagne</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-</head>
+  <body>
+    <div class="header">
+      <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
+      <nav class="navigationsleiste">
+        <a href="index.html">Start</a>
+        <a href="recipe.html">Rezept des Tages</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+      <button class="burger_menu" onclick="toggleMenu()">
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+      </button>
+      <nav id="menu" class="d_none">
+        <ul>
+          <li><a href="">Start</a></li>
+          <li><a href="">Rezept</a></li>
+          <li><a href="">Kontakt</a></li>
+          <li><a href="">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<body>
-  <div class="header">
-    <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
-    <nav class="navigationsleiste">
-      <a href="index.html">Start</a>
-      <a href="recipe.html">Rezept des Tages</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="impressum.html">Impressum</a>
-    </nav>
-    <button class="burger_menu" onclick="toggleMenu()">
-      <div class="burger_line"></div>
-      <div class="burger_line"></div>
-      <div class="burger_line"></div>
-    </button>
-    <nav id="menu" class="d_none">
-      <ul>
-        <li><a href="">Start</a></li>
-        <li><a href="">Rezept</a></li>
-        <li><a href="">Kontakt</a></li>
-        <li><a href="">Impressum</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="header-line"></div>
-  <div class="wrapper">
-    <header></header>
-    <main>
-      <h1>Lasagne</h1>
-      <img style="object-fit: cover" id="hero-img" src="./img/lasagne.jpg" alt="Lasagne" />
-      <div class="recipe-info">
-        <div class="recipe-info-item">
-          <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">30 Min.</span>
-        </div>
-        <div class="recipe-info-item">
-          <img src="./img/brain-solid.svg" alt="brain_icon" /><span class="recipe-info-item-text">Normal</span>
-        </div>
-        <div class="recipe-info-item">
-          <img src="./img/calendar-alt-regular.svg" alt="calendar_icon" />
-          <span class="recipe-info-item-text">14.10.2025</span>
-        </div>
-      </div>
-
-      <div class="horizontal-line"></div>
-
-      <div class="ingredients-input">
-        <form class="recipe-form">
-          <label for="amount">Zutaten für</label>
-
-          <div class="input-group">
-            <input id="amount" min="1" value="4" type="number" />
-            <button class="button-single">Portionen</button>
-          </div>
-        </form>
-      </div>
-      <table>
-        <tr>
-          <td></td>
-          <td>Olivenöl</td>
-        </tr>
-        <tr>
-          <td>500</td>
-          <td>g Hackfleisch, gemischtes</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Zwiebel(n)</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Knoblauchzehe(n)</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Bund Petersilie oder TK</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>EL Tomatenmark</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Dose Tomaten, geschälte 800 g</td>
-        </tr>
-        <tr>
-          <td>etwas</td>
-          <td>Rotwein</td>
-        </tr>
-
-        <tr>
-          <td>0.5</td>
-          <td>Liter Milch</td>
-        </tr>
-        <tr>
-          <td>30</td>
-          <td>g Butter</td>
-        </tr>
-        <tr>
-          <td>40</td>
-          <td>g Mehl</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Salz und Pfeffer</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Zitronensaft</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Muskat</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Fett für die Form</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Butterflöckchen</td>
-        </tr>
-        <tr>
-          <td>300</td>
-          <td>g Lasagneplatte(n)</td>
-        </tr>
-        <tr>
-          <td>n. B.</td>
-          <td>Käse, geriebener</td>
-        </tr>
-      </table>
-      <section class="preparation">
-        <h2>Zubereitung</h2>
+    <div class="header-line"></div>
+    <div class="wrapper">
+      <header></header>
+      <main>
+        <h1>Lasagne</h1>
+        <img
+          style="object-fit: cover"
+          id="hero-img"
+          src="./img/lasagne.jpg"
+          alt="Lasagne"
+        />
         <div class="recipe-info">
           <div class="recipe-info-item">
-            <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">Ca. 30 Min.
-              arbeitszeit</span>
+            <img src="./img/clock-regular.svg" alt="clock_item" /><span
+              class="recipe-info-item-text"
+              >30 Min.</span
+            >
           </div>
           <div class="recipe-info-item">
-            <img src="./img/clock-regular.svg" alt="clock_item" /><span class="recipe-info-item-text">Gesamtzeit 1 Std.
-              40 Min.</span>
+            <img src="./img/brain-solid.svg" alt="brain_icon" /><span
+              class="recipe-info-item-text"
+              >Normal</span
+            >
+          </div>
+          <div class="recipe-info-item">
+            <img src="./img/calendar-alt-regular.svg" alt="calendar_icon" />
+            <span class="recipe-info-item-text">14.10.2025</span>
           </div>
         </div>
-        <div class="recipe-instructions">
-          <p>
-            <b>Ragú Bolognese:</b><br />
-            In einem Topf das Olivenöl erhitzen, das Hackfleisch darin
-            rundherum anbraten und die gehackten Zwiebeln und die gehackte
-            Petersilie dazugeben. Knoblauch in feinen Scheiben und Tomatenmark
-            dazu rühren und mitbraten. Mit den Dosentomaten aufgießen, salzen
-            und pfeffern. Rotwein nach Belieben beifügen. Das Ragú mindestens
-            eine halbe Stunde lang bei geöffnetem Topf einkochen lassen.<br /><br />
-            <b>Béchamelsauce:</b><br />
-            Butter in einem kleinen Topf schmelzen und das Mehl mit dem
-            Schneebesen unterrühren und hellgelb anschwitzen. Die Milch
-            dazugießen und die Sauce glatt rühren. Wer zu langsam gerührt hat
-            und Klümpchen in der Sauce findet, kann die Sauce durch ein feines
-            Haarsieb passieren und dann weiterkochen lassen. Die Sauce sollte
-            fast eine halbe Stunde lang auf kleiner Flamme köcheln, damit sie
-            den Mehlgeschmack verliert. Mit Salz, Pfeffer und Zitronensaft
-            sowie etwas Muskatnuss abschmecken.<br /><br />
-            <b>Zubereitung der Lasagne:</b><br />
-            BIn einer gebutterten, feuerfesten Form etwas Ragú Bolognese
-            verteilen, eine Schicht Lasagneplatten darauf legen, die
-            Nudelschicht wieder mit Ragú und dann mit einer Schicht Béchamel
-            bedecken. Anschließend wieder eine Schicht Nudeln, Ragú und
-            Béchamel. So Schicht für Schicht die Form füllen. Die letzte
-            Schicht sollte die Béchamelsauce bilden. Dick mit geriebenem Käse
-            bestreuen und Butterflöckchen darauf setzen.<br /><br />
-            Die Lasagne im heißen Backofen bei 180 °C Umluft ca. 30 - 40
-            Minuten backen, bis die Kruste goldbraun ist.
-          </p>
-        </div>
-      </section>
-      <section class="creator-section">
-        <h3>Rezept erstellt von</h3>
-        <div class="creator">
-          <img src="./img/Vladi_Foto.jpg" alt="img_Vladi" />
-          <span>Vladislav P.</span>
-        </div>
-      </section>
-    </main>
-  </div>
-  <div class="footer-section">
-    <div id="footer" style="width: 100%;"></div>
-    <script src="script.js"></script>
-  </div>
-</body>
 
+        <div class="horizontal-line"></div>
+
+        <div class="ingredients-input">
+          <form class="recipe-form">
+            <label for="amount">Zutaten für</label>
+
+            <div class="input-group">
+              <input id="amount" min="1" value="4" type="number" />
+              <button class="button-single">Portionen</button>
+            </div>
+          </form>
+        </div>
+        <table>
+          <tr>
+            <td></td>
+            <td>Olivenöl</td>
+          </tr>
+          <tr>
+            <td>500</td>
+            <td>g Hackfleisch, gemischtes</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Zwiebel(n)</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Knoblauchzehe(n)</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Bund Petersilie oder TK</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>EL Tomatenmark</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Dose Tomaten, geschälte 800 g</td>
+          </tr>
+          <tr>
+            <td>etwas</td>
+            <td>Rotwein</td>
+          </tr>
+
+          <tr>
+            <td>0.5</td>
+            <td>Liter Milch</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>g Butter</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>g Mehl</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Zitronensaft</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Muskat</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Fett für die Form</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Butterflöckchen</td>
+          </tr>
+          <tr>
+            <td>300</td>
+            <td>g Lasagneplatte(n)</td>
+          </tr>
+          <tr>
+            <td>n. B.</td>
+            <td>Käse, geriebener</td>
+          </tr>
+        </table>
+        <section class="preparation">
+          <h2>Zubereitung</h2>
+          <div class="recipe-info">
+            <div class="recipe-info-item">
+              <img src="./img/clock-regular.svg" alt="clock_item" /><span
+                class="recipe-info-item-text"
+                >Ca. 30 Min. arbeitszeit</span
+              >
+            </div>
+            <div class="recipe-info-item">
+              <img src="./img/clock-regular.svg" alt="clock_item" /><span
+                class="recipe-info-item-text"
+                >Gesamtzeit 1 Std. 40 Min.</span
+              >
+            </div>
+          </div>
+          <div class="recipe-instructions">
+            <p>
+              <b>Ragú Bolognese:</b><br />
+              In einem Topf das Olivenöl erhitzen, das Hackfleisch darin
+              rundherum anbraten und die gehackten Zwiebeln und die gehackte
+              Petersilie dazugeben. Knoblauch in feinen Scheiben und Tomatenmark
+              dazu rühren und mitbraten. Mit den Dosentomaten aufgießen, salzen
+              und pfeffern. Rotwein nach Belieben beifügen. Das Ragú mindestens
+              eine halbe Stunde lang bei geöffnetem Topf einkochen lassen.<br /><br />
+              <b>Béchamelsauce:</b><br />
+              Butter in einem kleinen Topf schmelzen und das Mehl mit dem
+              Schneebesen unterrühren und hellgelb anschwitzen. Die Milch
+              dazugießen und die Sauce glatt rühren. Wer zu langsam gerührt hat
+              und Klümpchen in der Sauce findet, kann die Sauce durch ein feines
+              Haarsieb passieren und dann weiterkochen lassen. Die Sauce sollte
+              fast eine halbe Stunde lang auf kleiner Flamme köcheln, damit sie
+              den Mehlgeschmack verliert. Mit Salz, Pfeffer und Zitronensaft
+              sowie etwas Muskatnuss abschmecken.<br /><br />
+              <b>Zubereitung der Lasagne:</b><br />
+              BIn einer gebutterten, feuerfesten Form etwas Ragú Bolognese
+              verteilen, eine Schicht Lasagneplatten darauf legen, die
+              Nudelschicht wieder mit Ragú und dann mit einer Schicht Béchamel
+              bedecken. Anschließend wieder eine Schicht Nudeln, Ragú und
+              Béchamel. So Schicht für Schicht die Form füllen. Die letzte
+              Schicht sollte die Béchamelsauce bilden. Dick mit geriebenem Käse
+              bestreuen und Butterflöckchen darauf setzen.<br /><br />
+              Die Lasagne im heißen Backofen bei 180 °C Umluft ca. 30 - 40
+              Minuten backen, bis die Kruste goldbraun ist.
+            </p>
+          </div>
+        </section>
+        <section class="creator-section">
+          <h3>Rezept erstellt von</h3>
+          <div class="creator">
+            <img src="./img/Vladi_Foto.jpg" alt="img_Vladi" />
+            <span>Vladislav P.</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="footer-section">
+      <div id="footer" style="width: 100%"></div>
+      <script src="script.js"></script>
+    </div>
+  </body>
 </html>
