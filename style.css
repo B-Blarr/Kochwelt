@@ -455,6 +455,14 @@ footer {
   .footer-links a {
     font-size: 16px;
   }
+
+  .links_zu_rezepten {
+    gap: 5%;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -532,6 +540,35 @@ footer {
 
   footer {
     padding: 32px 40px;
+  }
+
+  .zweites_rezept h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .links_zu_rezepten {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links_zu_rezepten img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 300px;
+  }
+
+  .wrapper {
+    padding: 0 40px;
+  }
+
+  a h3 {
+    padding-bottom: 32px;
+  }
+
+  .links_zu_rezepten a {
+    gap: 10px;
   }
 }
 
