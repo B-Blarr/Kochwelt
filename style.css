@@ -42,8 +42,8 @@ img {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  min-height: 100dvh;
 }
 
 .wrapper {
@@ -357,6 +357,7 @@ h3 {
   width: 100%;
   max-width: 1440px;
   align-items: center;
+  flex: 1 0 auto;
 }
 
 .kontakt-form {
@@ -403,6 +404,7 @@ textarea {
   display: flex;
   justify-content: center;
   bottom: 0;
+  margin-top: auto;
 }
 
 footer {
