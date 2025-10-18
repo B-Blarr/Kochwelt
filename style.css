@@ -74,6 +74,7 @@ body {
 .header img {
   width: 100%;
   max-width: 320px;
+  padding-top: 16px;
 }
 
 .navigationsleiste {
@@ -88,28 +89,56 @@ body {
   font-weight: 600;
 }
 
+.navigationsleiste a:hover {
+  border-bottom: 2px solid black;
+}
+
 .burger_menu {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   justify-content: center;
   align-items: center;
   display: none;
 }
 
 .burger_line {
-  width: 64px;
-  height: 8px;
+  width: 28px;
+  height: 4px;
   background-color: green;
 }
 
 #menu {
   margin-top: 16px;
   border: 2px solid green;
-  width: 180px;
+  width: 150px;
+  height: 120px;
   border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  display: none;
+}
+
+nav li {
+  list-style-type: none;
+  padding-bottom: 4px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  border-bottom: 2px solid black;
 }
 
 .d_none {
@@ -533,6 +562,10 @@ ul {
   .navigationsleiste {
     display: none;
   }
+
+  #menu.is-open {
+    display: flex;
+  }
 }
 
 @media (max-width: 890px) {
@@ -629,6 +662,16 @@ ul {
 
   .wrapper {
     padding: 0 0px;
+  }
+
+  .burger_line {
+    width: 18px;
+    height: 2px;
+  }
+
+  .burger_menu {
+    width: 32px;
+    height: 28px;
   }
 
   .recipe-form label {
@@ -772,10 +815,5 @@ ul {
 
   .footer-links a {
     font-size: 14px;
-  }
-
-  #index-h1 {
-    font-size: 28px;
-    text-align: start;
   }
 }
