@@ -93,6 +93,12 @@ body {
   border-bottom: 2px solid black;
 }
 
+.burger-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .burger_menu {
   width: 40px;
   height: 40px;
@@ -111,19 +117,18 @@ body {
 }
 
 #menu {
-  margin-top: 16px;
   border: 2px solid green;
-  width: 150px;
+  width: 120px;
   height: 120px;
   border-radius: 10px;
-  position: absolute;
-  right: 0;
-  top: 102px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   display: none;
+  position: absolute;
+  top: calc(100% + 4px);     
+  right: 0px;               
 }
 
 nav li {
@@ -665,6 +670,10 @@ ul {
   .wrapper {
     padding: 0 0px;
   }
+
+  .header {
+  padding-inline: 40px;
+}
 
   .burger_line {
     width: 18px;
