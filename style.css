@@ -193,6 +193,10 @@ nav li a:hover {
   background-color: rgb(239, 239, 239);
 }
 
+.hover-big:hover{
+  transform: scale(1.05); 
+}
+
 #hero-img {
   min-height: 63px;
   min-width: 180px;
