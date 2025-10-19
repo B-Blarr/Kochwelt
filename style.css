@@ -142,6 +142,12 @@ nav li a {
   font-size: 18px;
 }
 
+nav a{   
+  border-bottom: 3px solid transparent; 
+  transition: border-color .2s ease;
+  text-decoration: none;
+}
+
 nav li a:hover {
   border-bottom: 2px solid black;
 }
