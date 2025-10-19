@@ -195,7 +195,7 @@ nav li a:hover {
 
 #hero-img {
   min-height: 63px;
-  min-width: 208px;
+  min-width: 180px;
 }
 
 main img {
@@ -548,6 +548,8 @@ ul {
   padding-inline-start: 0px;
 }
 
+
+
 @media (max-width: 1205px) {
   #index-h1 {
     font-size: 36px;
@@ -667,8 +669,14 @@ ul {
     padding: 0 40px;
   }
 
+ 
+
   .wrapper {
-    padding: 0 0px;
+    padding: 0px 0px;
+  }
+
+   .wrap{
+    padding: 0 40px;
   }
 
   .header {
@@ -779,10 +787,6 @@ ul {
     max-width: 300px;
   }
 
-  .wrapper {
-    padding: 0 40px;
-  }
-
   a h3 {
     padding-bottom: 32px;
   }
@@ -790,9 +794,13 @@ ul {
   .links_zu_rezepten a {
     gap: 10px;
   }
+
+  #datenschutz-headline{
+  font-size: 28px;
+}
 }
 
-@media (max-width: 490px) {
+/* @media (max-width: 490px) {
   form input {
     width: 48px;
   }
@@ -800,22 +808,30 @@ ul {
   .button {
     width: 86px;
   }
-}
+} */
 
-@media (max-width: 405px) {
+@media (max-width: 410px) {
   main {
     padding: 0 24px;
   }
 
+  .wrapper{
+    padding: 0 5px;
+  }
+
+   .wrap{
+    padding: 0 20px;
+  }
+
   form input {
-    width: 24px;
+    width: 48px;
     padding: 4px 4px;
     font-size: 12px;
   }
 
   .button {
     padding: 8px 32px;
-    width: 66px;
+    width: 110px;
     text-align: left;
     font-size: 12px;
   }
@@ -827,4 +843,7 @@ ul {
   .footer-links a {
     font-size: 14px;
   }
+  #datenschutz-headline{
+  font-size: 24px;
+}
 }
