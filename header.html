@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <div class="header">
-      <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"> <img src="img/logo.png" alt="Logo Kochwelt" /></a>
+    <div class="navbar-wrapper">
       <nav class="navigationsleiste">
         <a href="index.html">Start</a>
         <a href="maultaschen.html">Rezept des Tages</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="impressum.html">Impressum</a>
       </nav>
-      <div class="burger-wrapper">
-        <button class="burger_menu" onclick="toggleMenu()">
-          <div class="burger_line"></div>
-          <div class="burger_line"></div>
-          <div class="burger_line"></div>
-        </button>
-        <nav id="menu" class="d_none">
-          <ul>
-            <li><a href="index.html">Start</a></li>
-            <li><a href="maultaschen.html">Rezept</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="impressum.html">Impressum</a></li>
-          </ul>
-        </nav>
-      </div>
     </div>
-    <div class="header-line"></div>
-  </body>
+    <div class="burger-wrapper">
+      <button class="burger_menu" onclick="toggleMenu()">
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+        <div class="burger_line"></div>
+      </button>
+      <nav id="menu" class="d_none">
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="maultaschen.html">Rezept</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header-line"></div>
+</body>
+
 </html>
