@@ -1,6 +1,7 @@
 function sendMail(event) {
   event.preventDefault();
-  const data = new FormData(event.target);
+  const form = event.target;
+  const data = new FormData(form);
 
   fetch("https://formspree.io/f/xpwybwwb", {
     method: "POST",
@@ -10,6 +11,7 @@ function sendMail(event) {
     },
   })
     .then(() => {
+      form.reset();
       window.location.href = "#popup";
     })
     .catch((error) => {
