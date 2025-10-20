@@ -289,6 +289,11 @@ form label {
   border-radius: 8px 0 0 8px;
 }
 
+ form input {
+    width: 90px;
+    padding: 4px 6px;
+  }
+
 form input {
   border: 1px solid #d9d9d9;
   border-right: 0;
@@ -711,19 +716,6 @@ ul {
     padding-inline: 40px;
   }
 
-  /*
-  .burger_line {
-    width: 18px;
-    height: 2px;
-  }
-    
-
-  .burger_menu {
-    width: 32px;
-    height: 28px;
-  }
-  */
-
   .recipe-form label {
     font-size: 14px;
   }
@@ -830,16 +822,6 @@ ul {
     font-size: 28px;
   }
 }
-
-/* @media (max-width: 490px) {
-  form input {
-    width: 48px;
-  }
-
-  .button {
-    width: 86px;
-  }
-} */
 
 @media (max-width: 410px) {
   main {
